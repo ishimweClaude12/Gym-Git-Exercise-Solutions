@@ -807,4 +807,88 @@ Fast-forward
 
 User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
 $
+
+
+### Adding a second remote repository form github
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git remote add https://github.com/ishimweClaude12/Gym-Git-Exercise-Clone.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git remote
+origin
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git remote add git-clone https://github.com/ishimweClaude12/Gym-Git-Exercise-Clone.git
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git remote
+git-clone
+origin
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git commit -am "Add Icon"
+[main 5290cca] Add Icon
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git push
+To https://github.com/ishimweClaude12/Gym-Git-Exercise-Solutions.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/ishimweClaude12/Gym-Git-Exercise-Solutions.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 707 bytes | 78.00 KiB/s, done.
+From https://github.com/ishimweClaude12/Gym-Git-Exercise-Solutions
+   3fe84ae..b9f5a02  main       -> origin/main
+Merge made by the 'ort' strategy.
+ team.html | 3 +++
+ 1 file changed, 3 insertions(+)
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 599 bytes | 599.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/ishimweClaude12/Gym-Git-Exercise-Solutions.git
+   b9f5a02..7717cd0  main -> main
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git push git-clone
+Enumerating objects: 55, done.
+Counting objects: 100% (55/55), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (48/48), done.
+Writing objects: 100% (55/55), 13.00 KiB | 2.60 MiB/s, done.
+Total 55 (delta 23), reused 20 (delta 6), pack-reused 0
+remote: Resolving deltas: 100% (23/23), done.
+To https://github.com/ishimweClaude12/Gym-Git-Exercise-Clone.git * [new branch]      main -> main
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$
 ```
