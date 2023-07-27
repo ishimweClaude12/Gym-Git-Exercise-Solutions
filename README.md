@@ -271,7 +271,7 @@ $ git switch main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 
-# Bundle 2 , Exercise 1
+# Bundle 2 , Exercise 2
 
 Author: Claude Ishimwe <dpqb12haikuo@gmail.com>
 Date: Wed Jul 26 10:42:35 2023 +0200
