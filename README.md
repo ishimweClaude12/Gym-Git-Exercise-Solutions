@@ -532,7 +532,7 @@ ft/team-page
 
 - main
 
-# Bundle 2, Exercise 2
+<!-- # Bundle 2, Exercise 2
 
 User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
 $ git checkout ft/bundle-2
@@ -630,7 +630,7 @@ remote:
 To https://github.com/ishimweClaude12/Gym-Git-Exercise-Solutions.git
 
 - [new branch] ft/contact-page -> ft/contact-page
-  branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+  branch 'ft/contact-page' set up to track 'origin/ft/contact-page'. -->
 
 # Bundle 3, Exercise 2
 
