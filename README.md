@@ -532,7 +532,7 @@ ft/team-page
 
 - main
 
-# Bundle 2, Exercise 1
+# Bundle 2, Exercise 2
 
 User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
 $ git checkout ft/bundle-2
