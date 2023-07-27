@@ -60,7 +60,7 @@ $ git log --oneline
 2e21de9 (HEAD -> main, origin/main) Add README File
 3dba784 Add styles.css and heading title to the html file
 
-# Creating dev and test branches
+### Creating dev and test branches
 
 DAVTECH LTD@Claude MINGW64 ~/Desktop/GitExercises (main)
 $ git branch dev
