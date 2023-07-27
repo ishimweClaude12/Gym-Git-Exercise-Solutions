@@ -1,8 +1,6 @@
 # Git Exercises
 
-## Bundle 1
-
-### Exercise 1
+## Bundle 1 Exercise 1
 
 ```bash
 DAVTECH LTD@Claude MINGW64 ~/Desktop/GitExercises (master)
@@ -81,7 +79,7 @@ DAVTECH LTD@Claude MINGW64 ~/Desktop/GitExercises (main)
 $ git branch -d test
 Deleted branch test (was 2e21de9).
 
-## Bundle 1   Exercise 2
+# Bundle 1   Exercise 2
 DAVTECH LTD@Claude MINGW64 ~/Desktop/GitExercises (main)
 $ git branch
   dev
@@ -266,6 +264,173 @@ User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/tea
 $ git switch main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
+
+# Bundle 2 , Exercise 1
+
+Author: Claude Ishimwe <dpqb12haikuo@gmail.com>
+Date:   Wed Jul 26 10:42:35 2023 +0200
+
+    Add Icon
+
+commit b9f5a024afafab45530343281f413f4cff6b6b60
+Merge: 3fe84ae b201290
+Author: Claude <77576560+ishimweClaude12@users.noreply.github.co
+m>
+Date:   Tue Jul 25 14:36:53 2023 +0200
+
+    Merge pull request #5 from ishimweClaude12/ft/team-page
+
+    Git Exercises: Bundle 3   Ft/team page
+
+commit 3fe84ae70ef71ce546493a856e74c9c7f70cb8da
+Merge: a2cdfb2 408ba8b
+Author: Claude Ishimwe <dpqb12haikuo@gmail.com>
+Date:   Tue Jul 25 13:32:46 2023 +0200
+
+    Merge branch 'main' of https://github.com/ishimweClaude12/Gy
+m-Git-Exercise-Solutions
+
+commit a2cdfb2039523c0f8f4a817fc776d3c7f4a0e3a2
+Author: Claude Ishimwe <dpqb12haikuo@gmail.com>
+Date:   Tue Jul 25 13:32:29 2023 +0200
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git status
+On branch ft/squashing
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   footer.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git add README.md
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git commit -m "Add Terminal History to README File"
+[ft/squashing f462fda] Add Terminal History to README File
+ 2 files changed, 532 insertions(+), 155 deletions(-)
+ create mode 100644 footer.html
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git push
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git push --set-upstream origin ft/squashing
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 3.16 KiB | 3.16 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/ishimweClaude12/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/ishimweClaude12/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/squashing)
+$
+ *  History restored
+
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git switch main
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git add README.md
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git stash
+Saved working directory and index state WIP on ft/squashing: f462fda Add Terminal History to README File
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git stash list
+stash@{0}: WIP on ft/squashing: f462fda Add Terminal History to README File
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git stash pop stash@{0}
+Auto-merging README.md
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+        modified:   README.md
+                                                                ectory)
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped stash@{0} (531e33379303fd75d284000cfdf624cda5fd38dc)    )
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/bundle--2
+Switched to a new branch 'ft/bundle--2'
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/bundle--2)
+$ git add services.html
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/bundle--2)
+$ git commit -m "feat: Services.html"
+[ft/bundle--2 8c418f4] feat: Services.html
+ 1 file changed, 12 insertions(+), 13 deletions(-)
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/bundle--2)
+$ git push
+fatal: The current branch ft/bundle--2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle--2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/bundle--2)
+$ ^C
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/bundle--2)
+$ git push --set-upstream origin ft/bundle--2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 426 bytes | 426.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/bundle--2' on GitHub by visiting:
+remote:      https://github.com/ishimweClaude12/Gym-Git-Exercise-Solutions/pull/new/ft/bundle--2
+remote:
+To https://github.com/ishimweClaude12/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle--2 -> ft/bundle--2
+branch 'ft/bundle--2' set up to track 'origin/ft/bundle--2'.
+
+User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (ft/bundle--2)
+$
+# Bundle 3, Exercise 1
 
 User@DESKTOP-3M65OUK MINGW64 ~/Desktop/TheGym/Gym-Git-Exercise-Solutions (main)
 $ git checkout -b ft/contact-page
